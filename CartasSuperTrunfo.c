@@ -40,6 +40,7 @@ int main() {
     printf("Digite a QTD de Pontos Turísticos da Cidade abaixo e pressione Enter:\n");
     scanf("%d", &pontos_turisticos);
 
+    // Cáculo dos atributos da Carta 1:
     densidade_populacional = populacao/area;
     pib_per_capita = pib/populacao;
     super_poder = populacao + area + pib + pib_per_capita + pontos_turisticos +( 1/densidade_populacional);
@@ -59,6 +60,7 @@ int main() {
     printf("Digite a QTD de Pontos Turísticos da Cidade abaixo e pressione Enter:\n");
     scanf("%d", &pontos_turisticos_2);
 
+    // Cáculo dos atributos da Carta 2:
     densidade_populacional_2 = populacao_2/area_2;
     pib_per_capita_2 = pib_2/populacao_2;
     super_poder_2 = populacao_2 + area_2 + pib_2 + pib_per_capita_2 + pontos_turisticos_2 +( 1/densidade_populacional_2);
@@ -91,7 +93,9 @@ int main() {
     printf("PIB per Capita: %f\n",pib_per_capita_2);
     printf("Super Poder: %f\n\n",super_poder_2);
     
-    
+
+    // Exibição da comparação de poderes:
+    printf("\n\n*****Comparação de Super Poderes*****\n");
     printf("População maior: %d\n", poder_mais_forte = populacao > populacao_2);
     printf("Área maior: %d\n", poder_mais_forte = area > area_2);
     printf("Pib maior: %d\n", poder_mais_forte = pib > pib_2);
